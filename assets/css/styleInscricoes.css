@@ -64,6 +64,16 @@ main {
     color: #ce8585;
 }
 
+
+.entrada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('assets/img/war college.jpg');
+}
+
 .home__title {
     font-size: 50px;
     color: #000000;
