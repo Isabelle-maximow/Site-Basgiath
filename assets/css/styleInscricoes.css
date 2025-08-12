@@ -16,6 +16,7 @@ html {
 body {
     margin: 0;
     font-family: var(--body-font);
+    background-color: #333;
 }
 
 /*===== NAVBAR =====*/
@@ -102,6 +103,8 @@ main {
     top: 0;
     left: 0;
     transform: none;
+    font-family: 'Castoro Titling', serif;
+    color: #333;
 }
 
 .container .title {
@@ -197,6 +200,7 @@ form input[type="radio"] {
     display: none;
 }
 
+/*  BOTÃO DE ENVIAR */
 form .button {
     height: 45px;
     margin: 35px 0
@@ -218,5 +222,17 @@ form .button input {
 
 form .button input:hover {
     background: linear-gradient(-135deg, #022d4b, #4b0168);
+}
+
+.home__container{
+    max-width: 700px;
+    width: 100%;
+    background-color: #829ab4;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    align-items: center;
+    margin: 40px auto 0 auto;
+    position: relative;
 }
 
