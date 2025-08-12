@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Militar de Basgiath</title>
+
+    <link rel="stylesheet" href="assets/css/styleInscricoes.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet">
+
+    <!-- ICONS BOXICONS -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- ===== HEADER =====-->
+    <header class="l-header">
+        <nav>
+            <a class="nav__logo" href="/">Colégio Militar de Navarre</a>
+            <ul class="nav__list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="home__container">
+            <h1 class="home__title">Instituto Militar de Basgiath</h1>
+            <p class="home__subtitle">Inscrições Abertas</p>
+            <p class="aviso">O preenchimento deste formulário não garante sua inscrição. Verifique seu e-mail para mais informações.</p>
+        </div>
+    </section>
+
+    <!--  FORMULARIO -->
+    <div class="container">
+        <div class="title">Inscreva-se</div>
+            <form action="#">
+                <div class="infos">
+                    <div class="input-box">
+                        <span class="details">Nome</span>
+                        <input type="text" placeholder="Insira seu nome" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Sobrenome</span>
+                        <input type="text" placeholder="Insira seu sobrenome" required>
+                    </div>
+                    <!-- Input for Email -->
+                    <div class="input-box">
+                        <span class="details">E-mail</span>
+                        <input type="text" placeholder="Insira seu E-mail" required>
+                    </div>
+                    <!-- Input for Phone Number -->
+                    <div class="input-box">
+                        <span class="details">Telefone</span>
+                        <input type="text" placeholder="Insira seu número de telefone" required>
+                    </div>
+                </div>
+                <div class="genero">
+                    <!-- botoes - generos  -->
+                    <input type="radio" name="gender" id="botao-1">
+                    <input type="radio" name="gender" id="botao-2">
+                    <input type="radio" name="gender" id="botao-3">
+                    <span class="gender-title">Genero</span>
+                    <div class="category">
+                        <!-- Label for Male -->
+                        <label for="botao-1">
+                            <span class="botao one"></span>
+                            <span class="gender">Masculino</span>
+                        </label>
+                        <!-- Label for Female -->
+                        <label for="botao-2">
+                            <span class="botao two"></span>
+                            <span class="gender">Feminino</span>
+                        </label>
+                        <!-- Label for Prefer not to say -->
+                        <label for="botao-3">
+                            <span class="botao three"></span>
+                            <span class="gender">Prefiro não informar</span>
+                        </label>
+                    </div>
+                </div>
+                <!-- Submit button -->
+                <div class="button">
+                    <input type="submit" value="Registrar">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <!-- RELLAX JS -->
+    <script src="assets/js/rellax.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <!-- MAIN JS -->
+    <script src="assets/js/main.js"></script>
