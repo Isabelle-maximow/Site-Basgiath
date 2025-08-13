@@ -19,8 +19,6 @@ var rellax = new Rellax('.parallax');
 /*Navbar*/
 gsap.from('.nav__logo', {opacity:0, duration: 3, delay: .5, y: 30, ease:'expo.out'});
 gsap.from('.nav__list', {opacity:0, duration: 3, delay: .5, y: 30, ease:'expo.out'});
-// gsap.from('.nav__toggle', {opacity:0, duration: 3, delay: .7, y: 30, ease:'expo.out'});
-// gsap.from('.nav__item', {opacity: 0, duration: 3, delay: .7, y: 35, ease:'expo.out', stagger: .2})
 
 /*Texto*/
 gsap.from('.home__title', {opacity:0, duration: 3, delay: 1.3, y: 35, ease:'expo.out'});
@@ -41,3 +39,6 @@ sr.reveal('.section__data',{origin: 'left',distance: '70px'});
 
 /*Imgs*/
 sr.reveal('.section__img',{origin: 'left',distance: '90px',delay: 200}); 
+
+/*cards*/
+sr.reveal('.card__article',{origin: 'top',distance: '70px'}); 

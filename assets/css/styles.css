@@ -228,7 +228,7 @@ main {
 
 /*===== SECTION =====*/
 .l-section {
-  background-color: black;
+  background-color: rgb(38, 45, 88);
 }
 
 .section-2 {
@@ -339,7 +339,7 @@ main {
 }
 
 /* CARDS  */
-.card-yellow {
+/* .card-yellow {
   --hue: var(--yellow-color);
 }
 
@@ -349,12 +349,20 @@ main {
 
 .card-pink {
   --hue: var(--pink-color);
-}
+} */
 
 /*=============== CARD ===============*/
 .card {
   position: relative;
   padding-block: 5rem;
+}
+
+.card_title{
+  text-align: center;
+  font-size: 2.5rem;
+  color: black;
+  margin-bottom: 2rem;
+  background: none;
 }
 
 .card__bg, 
@@ -394,32 +402,36 @@ main {
   transition: transform .4s;
 }
 
-.card__shadow {
+/* .card__shadow {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: linear-gradient(180deg, 
-            hsla(0, 0%, 0%, 0) 70%, 
+            hsl(0, 0%, 0%) 0%, 
+            hsla(0, 0%, 0%, 0.2) 20%, 
+            hsla(0, 0%, 0%, 0) 80%, 
             hsl(0, 0%, 0%) 100%);
-}
+  border-radius: 1rem;
+} */
 
 .card__data {
-  color: var(--white-color);
+  color: whitesmoke;
   position: absolute;
   left: 1.5rem;
   bottom: 2rem;
+  font-family: 'Castoro Titling', serif;
 }
 
 .card__name {
-  font-size: var(--big-font-size);
+  font-size: 20px;
   margin-bottom: .25rem;
 }
 
-.card__profession {
+.card__data .card__profession {
   display: block;
-  font-size: var(--small-font-size);
+  font-size: 35px;
 }
 
 .card__clip {
@@ -460,16 +472,21 @@ main {
 }
 
 .info__name {
-  font-size: var(--biggest-font-size);
+  font-size: 25px;
   margin-bottom: .5rem;
+  font-family: 'Castoro Titling', serif;
+  color: black;
 }
 
-.info__description {
-  font-size: var(--small-font-size);
+.info .info__description {
+  font-size: 15px;
   margin-bottom: 1rem;
+  font-family: 'Castoro Titling', serif;
+  color: black;
+  
 }
 
-.info__button {
+/* .info__button {
   display: inline-flex;
   background-color: hsl(var(--hue), 90%, 50%);
   box-shadow: 0 0 12px hsl(var(--hue), 90%, 50%);
@@ -479,11 +496,11 @@ main {
   font-size: var(--small-font-size);
   font-weight: var(--font-semi-bold);
   transition: box-shadow .4s;
-}
+} */
 
-.info__button:hover {
+/* .info__button:hover {
   box-shadow: 0 0 20px hsl(var(--hue), 90%, 50%);
-}
+} */
 
 .info__social {
   position: absolute;
@@ -520,6 +537,9 @@ main {
 .card__clip:hover ~ .info {
   clip-path: circle(100%);
 }
+
+
+
 
 /*=============== BREAKPOINTS ===============*/
 
