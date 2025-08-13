@@ -228,11 +228,16 @@ main {
 
 /*===== SECTION =====*/
 .l-section {
-  background-color: rgb(38, 45, 88);
+  background-image: url('../img/funod2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.10);
 }
 
 .section-2 {
   background-color: rgba(0, 65, 134, 0.475);
+ 
 }
 
 .section {
@@ -255,6 +260,7 @@ main {
   -webkit-box-align: center;
   -ms-flex-align: center; 
   align-items: center;
+
 }
 
 .section__data {
@@ -330,6 +336,14 @@ main {
     width: 470px;
   }
 }
+.section__bg, 
+.section__blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 @media screen and (min-width: 1200px) {
   .bd-grid {
@@ -374,9 +388,12 @@ main {
   height: 100%;
 }
 
+
+
 .card__bg {
   object-fit: cover;
   object-position: center;
+  filter: brightness(0.10);
 }
 
 .card__blur {
@@ -400,6 +417,7 @@ main {
 .card__img {
   border-radius: 2rem;
   transition: transform .4s;
+  filter: brightness(0.8);
 }
 
 /* .card__shadow {
@@ -450,6 +468,7 @@ main {
   z-index: 5;
   cursor: pointer;
   transition: transform .4s;
+  filter: brightness(0.10);
 }
 
 .card__article:hover .card__img {
@@ -475,16 +494,17 @@ main {
   font-size: 25px;
   margin-bottom: .5rem;
   font-family: 'Castoro Titling', serif;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .info .info__description {
   font-size: 15px;
   margin-bottom: 1rem;
   font-family: 'Castoro Titling', serif;
-  color: black;
+  color: rgb(255, 255, 255);
   
 }
+
 
 /* .info__button {
   display: inline-flex;
@@ -502,7 +522,7 @@ main {
   box-shadow: 0 0 20px hsl(var(--hue), 90%, 50%);
 } */
 
-.info__social {
+/* .info__social {
   position: absolute;
   left: 1.5rem;
   bottom: 1.5rem;
@@ -521,7 +541,7 @@ main {
   font-size: 1.5rem;
   color: var(--black-color);
   transition: transform .4s;
-}
+} */
 
 .info__link:hover {
   transform: translateY(-.25rem);
